@@ -11,6 +11,18 @@ package notafiscal;
  */
 public class Emissor {
     
-      String nome, endereco, telefone, CNPJ, RG, email, dataNascimento;
+    String cnpj;
+    String nomeRazaoSocial;
+    String nomeFantasia;
+    int incricaoEstadual;
+    int regimeTributario;
+    int cep;
+    String endereco;
+    String lougradoro;
+    int numero;
+    String complemento;
+    String bairro;
+    String estado;
+    String cidade;
     
 }
