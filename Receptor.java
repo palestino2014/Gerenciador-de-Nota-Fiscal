@@ -11,6 +11,19 @@ package notafiscal;
  */
 public class Receptor {
     
-    String nome, endereco, telefone, CNPJ, RG, email, dataNascimento;
+    String cpf;
+    String cnpj;
+    String idEstrageiro;
+    String razaoSocial;
+    String nomeFantasia;
+    int inscricaoEstadual;
+    String iest;
+    int cep;
+    String enderecoEminete;
+    String lougradouro;
+    int numero;
+    String complemento;
+    String uf;
+    String municipio;
     
 }
