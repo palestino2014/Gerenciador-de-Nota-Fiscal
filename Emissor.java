@@ -1,28 +1,35 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package notafiscal;
 
 /**
  *
- * @author informatica
+ * @author gustavo
  */
-public class Emissor {
-    
+public class Emissor extends Endereco {
+
     String cnpj;
     String nomeRazaoSocial;
     String nomeFantasia;
-    int incricaoEstadual;
+    int inscricaoEstadual;
     int regimeTributario;
-    int cep;
-    String endereco;
-    String lougradoro;
-    int numero;
-    String complemento;
-    String bairro;
-    String estado;
-    String cidade;
-    
+     public String getCnpj() {
+        return cnpj;
+    }
+    public String nomeRazaoSocial() {
+        return nomeRazaoSocial;
+    }
+    public String nomeFantasia() {
+        return nomeFantasia;
+    }
+    public int inscricaoEstadual() {
+        return inscricaoEstadual;
+    }
+    public int regimeTributario() {
+        return regimeTributario;
+    }
 }
+
