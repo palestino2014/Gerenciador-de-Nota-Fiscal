@@ -16,7 +16,7 @@ public class Receptor extends pessoa {
    int inscricaoEstadual;
    String iest; //Inscrição Estadual Substituto Tributário
    
-    public String getCnpjCpf() {
+    public abstract String getCnpjCpf() {
     return cnpjcpf;
     }
      public String getIdEstrangeiro() {
