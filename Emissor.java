@@ -21,7 +21,7 @@ public class  Emissor extends pessoa {
         return regimeTributario;
     }
    @override
-   public String getCnpjCpf() {
+   public abstract String getCnpjCpf() {
 	return cnpjcpf;
    }
 }
