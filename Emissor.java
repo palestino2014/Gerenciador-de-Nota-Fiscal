@@ -9,27 +9,19 @@ package notafiscal;
  *
  * @author gustavo
  */
-public class Emissor extends Endereco {
+public class  Emissor extends pessoa {
 
-    String cnpj;
-    String nomeRazaoSocial;
-    String nomeFantasia;
     int inscricaoEstadual;
-    int regimeTributario;
-     public String getCnpj() {
-        return cnpj;
-    }
-    public String nomeRazaoSocial() {
-        return nomeRazaoSocial;
-    }
-    public String nomeFantasia() {
-        return nomeFantasia;
-    }
+    int regimeTributario;    
+
     public int inscricaoEstadual() {
         return inscricaoEstadual;
     }
     public int regimeTributario() {
         return regimeTributario;
     }
+   @override
+   public String getCnpjCpf() {
+	return cnpjcpf;
+   }
 }
-
