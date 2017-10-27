@@ -9,21 +9,15 @@ package notafiscal;
  *
  * @author gustavo
  */
-public class Receptor extends Endereco {
+public class Receptor extends pessoa {
 
-    String cpf;
-    String cnpj;
-    String idEstrangeiro;
-    String razaoSocial;
-    String nomeFantasia;
-    int inscricaoEstadual;
-    String iest; //InscriÃ§Ã£o Estadual Substituto TributÃ¡rio
-  
-    public String getCpf() {
-    return cpf;
-    }
-    public String getCnpj() {
-    return cnpj;
+   String idEstrangeiro;
+   String razaoSocial;
+   int inscricaoEstadual;
+   String iest; //Inscrição Estadual Substituto Tributário
+   
+    public String getCnpjCpf() {
+    return cnpjcpf;
     }
      public String getIdEstrangeiro() {
     return idEstrangeiro;
@@ -40,4 +34,5 @@ public class Receptor extends Endereco {
     public String getIest() {
     return iest;
     }
+    
 }
