@@ -1,38 +1,72 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package notafiscal;
 
-/**
- *
- * @author gustavo
- */
-public class Receptor extends pessoa {
+ // Classe receptor
+
+public class Receptor extends Pessoa {
+
+// atributos da classe receptor
+
 
    String idEstrangeiro;
    String razaoSocial;
-   int inscricaoEstadual;
+   String inscricaoEstadual;
    String iest; //Inscrição Estadual Substituto Tributário
-   
-    public abstract String getCnpjCpf() {
-    return cnpjcpf;
+
+ 
+// métodos da classe receptor
+
+    public String CnpjCpf() {
+        return cnpjcpf;
     }
-     public String getIdEstrangeiro() {
-    return idEstrangeiro;
+
+    public void setCnpjCpf(String CnpjCpf) {
+        this.cnpjcpf = CnpjCpf;
     }
-    public String getRazaoSocial() {
-    return razaoSocial;
+
+
+    public String IdEstrangeiro() {
+        return idEstrangeiro;
     }
-    public String getNomeFantasia() {
-    return nomeFantasia;
+
+    public void setIdEstrangeiro(String IdEstrangeiro) {
+        this.idEstrangeiro = IdEstrangeiro;
     }
-    public int getInscricaoEstadual() {
-    return inscricaoEstadual;
+
+
+    public String RazaoSocial() {
+        return razaoSocial;
     }
-    public String getIest() {
-    return iest;
+
+    public void setRazaoSocial(String RazaoSocial) {
+         this.razaoSocial = RazaoSocial;
     }
+
+
+    public String NomeFantasia() {
+        return nomeFantasia;
+    }
+
+    public void setNomeFantasia(String NomeFantasia) {
+         this.nomeFantasia = NomeFantasia;
+   }
+
+
+    public String InscricaoEstadual() {
+        return inscricaoEstadual;
+    }
+
+    public void setInscricaoEstadual(String InscricaoEstadual) {
+         this.inscricaoEstadual = InscricaoEstadual;
+   }
+
     
+    public String Iest() {
+        return iest;
+    }
+
+    public void setIest(String Iest) {
+        this.iest =  Iest;
+   }
+
+
 }
