@@ -1,34 +1,53 @@
 package notafiscal;
+
+
 import java.io.FileWriter;
 import java.io.File;
 import java.io.IOException; 
 
+
 public class Main {
-    /**
-     * @param args the command line arguments
-     */
+
+  // Prototipo de nota fiscal - projeto POO2
+
     public static void main(String[] args) {
-       
+
+/*
+         // Acesso aos dados da classe emissor
+
             Emissor atualEmissor;
             atualEmissor = new Emissor();
             atualEmissor.cnpj = "111.111.111/0001-24";
-            atualEmissor.nomeRazaoSocial = "Comercio de Software - ME";
+            //atualEmissor.nomeRazaoSocial = "Comercio de Software - ME";
             atualEmissor.nomeFantasia = "Online Facil";
             atualEmissor.inscricaoEstadual = 1111111;
             atualEmissor.regimeTributario = 171;
-            atualEmissor.cep = 99999999;
+            atualEmissor.cep = "99999999";
             atualEmissor.endereco = "Rua Laranjal";
             atualEmissor.lougradouro = "Não possui";
-            atualEmissor.numero = 35;
+            atualEmissor.numero = "35";
             atualEmissor.complemento = "Não possui";
             atualEmissor.bairro = "Centro";
             atualEmissor.cidade = "Limeira";
-            atualEmissor.estado = "SP"; 
+            atualEmissor.estado = "SP";
 
-            InformacoesAdicionais atualInformacoesAdicionais;
-            atualInformacoesAdicionais = new InformacoesAdicionais();
-            atualInformacoesAdicionais.infAdProd = "Nota Fiscal isenta da informacoes adicionais";
-            
+
+
+            NewJFrame atualNewJFrame;
+            atualNewJFrame = new NewJFrame();
+
+            atualNewJFrame.valor = "dd" ;
+
+
+
+
+         // Acesso aos dados da classe InformacoesAdicionais
+
+           
+
+
+        // Acesso aos dados da classe atualDadosNotaFiscalEletronica
+
             DadosNotaFiscalEletronica atualDadosNotaFiscalEletronica;
             atualDadosNotaFiscalEletronica = new DadosNotaFiscalEletronica();
             atualDadosNotaFiscalEletronica.serie = 1111111;
@@ -41,10 +60,13 @@ public class Main {
             atualDadosNotaFiscalEletronica.natOp = "Natureza da operacao";
             atualDadosNotaFiscalEletronica.indFinal = "Não é empresa";
             atualDadosNotaFiscalEletronica.idDest = "Interestadual";
-
-            Receptor atualReceptor;
+*/
+        
+         // Acesso aos dados da classe Receptor
+       
+     /*       Receptor atualReceptor;
             atualReceptor = new Receptor();
-            atualReceptor.cep = 123456789;
+            atualReceptor.cep = "123456789";
             atualReceptor.cnpj = "123456997";
             atualReceptor.complemento = "Não há";
             atualReceptor.cpf = "123456789";
@@ -56,9 +78,14 @@ public class Main {
             atualReceptor.lougradouro = "";
             atualReceptor.cidade = "Limeira";
             atualReceptor.nomeFantasia = "Comercial Santa Elisa";
-            atualReceptor.numero = 77077;
+            atualReceptor.numero ="77077";
             atualReceptor.razaoSocial = "Comercio de Software on-line Facil";
-            atualReceptor.bairro = "Morro Azul"; 
+            atualReceptor.bairro = "Morro Azul";  */
+
+
+            /*
+
+         // Acesso aos dados da classe Produtos
 
             Produtos atualProdutos;
             atualProdutos = new Produtos();
@@ -78,6 +105,12 @@ public class Main {
             atualProdutos.vProd = 1;
             atualProdutos.vSeg = 1;
             atualProdutos.xProd = "Passagem";
+*/
+
+
+    /*
+
+         // Acesso aos dados da classe RecolhimentoIcms
 
             RecolhimentoIcms atualRecolhimentoIcms;
             atualRecolhimentoIcms = new RecolhimentoIcms();
@@ -115,6 +148,9 @@ public class Main {
             atualRecolhimentoIcms.vICMSST = 1;
             atualRecolhimentoIcms.vICMSUFDest = 1;
             atualRecolhimentoIcms.vICMSUFRemet =  1;
+*/
+/*
+        // Acesso aos dados da classe TotaisNota
 
             TotaisNota atualTotaisNota;
             atualTotaisNota = new TotaisNota();
@@ -132,30 +168,38 @@ public class Main {
             atualTotaisNota.vST = 2;
             atualTotaisNota.vSeg = 2;
             atualTotaisNota.vTotTrib = 2;
+*/
 
-            System.out.println("Emissor =  " + atualEmissor.nomeRazaoSocial);
-            System.out.println("Endereço do emissor =" +  atualEmissor.endereco + atualEmissor.numero + atualEmissor.bairro + atualEmissor.cidade + atualEmissor.estado  );
-            System.out.println("Receptor =  " + atualReceptor.nomeFantasia);
-            System.out.println("Endereço do receptor = " + atualReceptor.endereco + atualReceptor.numero + atualReceptor.bairro + atualReceptor.cidade + atualReceptor.estado );
-            System.out.println("Data da emissão da nota fiscal = " + atualDadosNotaFiscalEletronica.dhEmi);
-            System.out.println("Desconto nota =  " + atualTotaisNota.Desc);
-            System.out.println("Recolhimeto Icms =  " + atualRecolhimentoIcms.pCredSN);
-            System.out.println("Produto (Item) =  " + atualProdutos.xProd );
+         // Impressão dos dados para prototipagem da aplicação
 
-         String textoQueSeraEscrito = "Texto que sera escrito.";
+          //  System.out.println("Emissor =  " + atualEmissor.nomeRazaoSocial);
+            //System.out.println("Endereço do emissor =" +  atualEmissor.endereco + atualEmissor.numero + atualEmissor.bairro + atualEmissor.cidade + atualEmissor.estado  );
+          //  System.out.println("Receptor =  " + atualReceptor.nomeFantasia);
+          //  System.out.println("Endereço do receptor = " + atualReceptor.endereco + atualReceptor.numero + atualReceptor.bairro + atualReceptor.cidade + atualReceptor.estado );
+           // System.out.println("Data da emissão da nota fiscal = " + atualDadosNotaFiscalEletronica.dhEmi);
+            //System.out.println("Desconto nota =  " + atualTotaisNota.Desc);
+           //System.out.println("Recolhimeto Icms =  " + atualRecolhimentoIcms.pCredSN);
+           //System.out.println("Produto (Item) =  " + atualProdutos.xProd );
+            //System.out.println("Razao Social =" + atualEmissor.nomeRazaoSocial );
+
+ 
+         // Criação do arquivo em XML e exeções em caso de erro na geração do arquivo
+
+        //String textoQueSeraEscrito = "Texto que sera escrito.";
+/*
          FileWriter arquivo;
 
-	// criar arquivo em .XML	        
-	try {
-             arquivo = new FileWriter(new File("arquivos/emissor.xml"));
-             arquivo.write(atualEmissor.nomeRazaoSocial + atualEmissor.endereco + atualEmissor.numero + atualEmissor.bairro + atualEmissor.cidade + atualEmissor.estado);
-             arquivo.close();
-          } catch (IOException e) {
-             e.printStackTrace();
-          } catch (Exception e) {
-            e.printStackTrace();
-         }
-       }
-    }      
+            try {
+                 arquivo = new FileWriter(new File("arquivos/emissor.xml"));
+                 arquivo.write(nomeRazaoSocial + endereco + numero + bairro + cidade + estado);
+                 arquivo.close();
+                 } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                      }
 
+*/
+       }
+}      
 
