@@ -1,16 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package notafiscal;
 
-/**
- *
- * @author gustavo
- */
+
+ // Classe nota fiscal eletrônica
+
 public class DadosNotaFiscalEletronica {
 
+
+// atributos da classe
+ 
     int serie; // Sequência numérica que indica a qual série a nota fiscal em questão se refere, de 001 a 999, sendo que o intervalo de 890 a 899 é exclusivo para emissão de NF-e avulsa e, de 900 a 999, para emissão em contingência.
     int nNF; //  Indica a numeração da nota conforme a série, atendendo a uma sequência entre 1 a 999.999.999, sendo único e exclusivo para um determinado documento fiscal.
     String dhEmi; // Registra o dia e a hora exata em que a nota fiscal eletrônica foi emitida.
@@ -22,34 +19,47 @@ public class DadosNotaFiscalEletronica {
     String indFinal; //  Essa opção deve ser assinalada quando a operação tem como destinatário um consumidor final e não uma empresa que irá revender a mercadoria.
     String idDest; // Informa se a operação é interna (dentro do estado), interestadual ou com destinatário estabelecido no exterior.
 
-           public int getserie() {
-           return serie;
-    }
-           public int getnNF() {
-           return nNF;
-    }
+
+ // metodos da classe
+
+            public int getserie() {
+                return serie;
+            }
+
+            public int getnNF() {
+                return nNF;
+            }
+
             public String getdhEmi() {
-            return dhEmi;
-    }
+                return dhEmi;
+            }
+
             public String getdhSaiEnt() {
-            return dhSaiEnt;
-    }
+                return dhSaiEnt;
+            }
+
             public String gettpNF() {
-            return tpNF;
-    }
+                return tpNF;
+            }
+
             public String getindPag() {
-            return indPag;
-    }
+                return indPag;
+            }
+
             public String getindPres() {
-            return indPres;
-    }
+                return indPres;
+            }
+
             public String getnatOp() {
-            return natOp;
-    }
+                return natOp;
+            }
+
             public String getindFinal() {
-            return indFinal;
-    }
+                return indFinal;
+            }
+
             public String getidDest() {
-            return idDest;
-    }
+                return idDest;
+            }
+
 }
