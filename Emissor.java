@@ -1,15 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package notafiscal;
 
-/**
- *
- * @author gustavo
- */
-public class  Emissor extends pessoa {
+// Classe que herda os atributos de pessoa
+
+public class  Emissor extends Pessoa {
+
+// Método para retorna inscrição estadual e regime tributário
 
     int inscricaoEstadual;
     int regimeTributario;    
@@ -17,11 +12,9 @@ public class  Emissor extends pessoa {
     public int inscricaoEstadual() {
         return inscricaoEstadual;
     }
+
     public int regimeTributario() {
         return regimeTributario;
     }
-   @override
-   public abstract String getCnpjCpf() {
-	return cnpjcpf;
-   }
+
 }
