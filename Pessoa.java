@@ -1,75 +1,172 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package notafiscal;
 
-/**
- *
- * @author gustavo
- */
 
-public abstract class pessoa {
+public abstract class Pessoa {
+     
+    // Atributos da classe pessoa
+      
+       public String pessoa;
+       public String nomeRazaoSocial;
+       public String nomeFantasia;
+       public String cep;
+       public String endereco;
+       public String lougradouro;
+       public String numero;
+       public String complemento;
+       public String estado;
+       public String municipio ;
+       public String bairro;
+       public String cidade;
+       public String cnpj;
+       public String cpf;
+       public String cnpjcpf;
 
-    //   protected String nome;
-    //   protected Polimorfica(String Nome){
-    //   this.nome = nome;
-    //   }
-       protected String pessoa;
-       protected String nomeRazaoSocial;
-       protected String nomeFantasia;
-       protected int cep;
-       protected String endereco;
-       protected String lougradouro;
-       protected int numero;
-       protected String complemento;
-       protected String estado;
-       protected String municipio ;
-       protected String bairro;
-       protected String cidade;
-       protected String cnpj;
-       protected String cpf;
-       protected String cnpjcpf;
-       protected String Nome1;
-       protected String getCnpjCpf;
-          
-      public abstract String getNome1();
-      public abstract String getCpf();
-      public abstract String getCnpj();
-      public abstract String getCnpjCpf();
-       
-        public String getCpf() {
-        return cpf;
+
+
+    // Método para retorar o número do CPF
+
+        public String Cpf() {
+            return cpf;
         }
-        public String getCnpj() {
-        return cnpj;
+
+       public void setCpf(String Cpf) {
+            this.cpf = Cpf;
         }
-        public int getCep() {
-        return cep;
+
+   
+    // Método para retorar o número do CNPJ
+   
+        public String Cnpj() {
+            return cnpj;
         }
-        public String getEndereco() {
-        return endereco;
+
+        public void setCnpj(String Cnpj) {
+            this.cnpj = Cnpj;
         }
-        public String getLougradouro() {
-        return lougradouro;
+     
+    
+    // Método para retorar o número do Cep
+    
+        public String Cep() {
+            return cep;
         }
-        public int getNumero() {
-        return numero;
+
+        public void setCep(String Cep) {
+            this.cep = Cep;
         }
-        public String getComplemento() {
-        return complemento;
+
+
+    // Método para retorar o endereço
+
+        public String Endereco() {
+            return endereco;
         }
-        public String getEstado() {
-        return estado;
+
+        public void setEndereco(String Endereco) {
+            this.endereco = Endereco;
         }
-        public String getMunicipio() {
-        return municipio;
-        }       
+
+
+    // Método para retorar o Lougradouro
+      
+        public String Lougradouro() {
+            return lougradouro;
+        }
+
+        public void setLougradouro(String Lougradouro) {
+            this.lougradouro = Lougradouro;
+        }
+
+
+    // Método para retorar o número do imóvel
+
+        public String Numero() {
+            return numero;
+        }
+
+        public void setNumero(String Numero) {
+            this.numero = Numero;
+        }
+
+
+    // Método para retorar o Complemento
+
+        public String Complemento() {
+            return complemento;
+        }
+        
+        public void setComplemento(String Complemento) {
+            this.complemento = Complemento;
+        }
+
+
+   // Método para retorar o Estado
+
+        public String Estado() {
+            return estado;
+        }
+
+        public void setEstado(String Estado) {
+            this.estado = Estado;
+        }
+
+
+
+    // Método para retorar o Municipio
+
+        public String Municipio() {
+            return municipio;
+        }
+
+        public void setMunicipio(String Municipio) {
+            this.municipio = Municipio;
+        }
+
+
+    // Método para retorar o Bairro
+
+        public String Bairro() {
+            return bairro;
+        }
+
+        public void setBairro(String Bairro) {
+            this.bairro = Bairro;
+        }
+
+
+    // Método para retorar o CIdade
+
+        public String Cidade() {
+            return cidade;
+        }
+
+        public void setCidade(String Cidade) {
+            this.cidade = Cidade;
+        }
+
+
+
+    // Método para retorar a Razão Social
+  
         public String nomeRazaoSocial() {
-        return nomeRazaoSocial;
+            return nomeRazaoSocial;
         }
+
+        public void setnomeRazaoSocial(String nomeRazaoSocial) {
+            this.nomeRazaoSocial = nomeRazaoSocial;
+        }
+
+
+
+    // Método para retorar a nome fantasia
+ 
         public String nomeFantasia() {
-        return nomeFantasia;
+            return nomeFantasia;
         }
+
+       public void setnomeFantasia(String nomeFantasia) {
+            this.nomeFantasia = nomeFantasia;
+       }
+
+
 }
